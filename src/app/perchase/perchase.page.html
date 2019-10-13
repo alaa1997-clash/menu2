@@ -1,0 +1,22 @@
+<ion-header color='dark'>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/cart"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Perchase</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list >
+    <ion-item *ngFor="let item of menu">
+      <ion-thumbnail>
+        <ion-img [src]="item.fields?.image.fields.file.url"></ion-img>
+        </ion-thumbnail>
+        &nbsp;
+        <ion-label>
+          <h2>{{item.fields?.name}}</h2> 
+          <p>{{item.fields?.price | currency}}</p>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

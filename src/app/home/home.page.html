@@ -1,14 +1,101 @@
-<ion-header>
-  <ion-toolbar>
+
+<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+<ion-header >
+  <ion-toolbar color="danger" >
     <ion-title>
-      Ionic Blank
+      Ionic Shopping
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-badge ></ion-badge>
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
+ 
+<ion-content >
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <div class="container text-center" style="margin-top: 20px;">
+      <h1> MENU </h1>
+    </div>
+    <div class="container" style="margin-top:20px">
+        <div class="row">
+          <div class="col-sm col-md col-6" (click)="goToMenu('juice')">
+              <div class="card">
+                  <img src="../../assets/img/superdeluxe_owgtql.webp" style="height: 90%;" class="card-img-top" alt="...">
+                  <div class="card-body" text-center>
+                    <h5 class="card-title">juice</h5>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm col-md col-6" (click)="goToMenu('fast food')">
+              <div class="card">
+                  <img src="../../assets/img/2016_09_29_12990_1475116504._large.jpg" style="height: 40%;" class="card-img-top" alt="...">
+                  <div class="card-body" text-center>
+                    <h5 class="card-title">fast food</h5>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sm col-md col-6" (click)="goToMenu('Main menu')">
+                <div class="card">
+                    <img src="../../assets/img/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" text-center>
+                      <h5 class="card-title">Main menu </h5>
+    
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm col-md col-6" (click)="goToMenu('deshes')">
+                <div class="card">
+                    <img src="../../assets/img/طريقة_عمل_معكرونة_بالبندورة.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" text-center>
+                      <h5 class="card-title">deshes </h5>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+      
+        <div class="container" style="margin-top:20px">
+            <div class="row">
+              <div class="col-sm col-md col-6" (click)="goToMenu('juice')">
+                  <div class="card">
+                      <img src="../../assets/img/superdeluxe_owgtql.webp" style="height: 90%;" class="card-img-top" alt="...">
+                      <div class="card-body" text-center>
+                        <h5 class="card-title">juice</h5>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-sm col-md col-6" (click)="goToMenu('fast food')">
+                  <div class="card">
+                      <img src="../../assets/img/2016_09_29_12990_1475116504._large.jpg" style="height: 40%;" class="card-img-top" alt="...">
+                      <div class="card-body" text-center>
+                        <h5 class="card-title">fast food</h5>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm col-md col-6" (click)="goToMenu('Main menu')">
+                    <div class="card">
+                        <img src="../../assets/img/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" text-center>
+                          <h5 class="card-title">Main menu </h5>
+        
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm col-md col-6" (click)="goToMenu('deshes')">
+                    <div class="card">
+                        <img src="../../assets/img/طريقة_عمل_معكرونة_بالبندورة.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" text-center>
+                          <h5 class="card-title">deshes </h5>
+                        </div>
+                      </div>
+                </div>
+              </div>
+          </div>
 </ion-content>

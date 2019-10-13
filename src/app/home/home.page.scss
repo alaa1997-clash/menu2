@@ -1,1 +1,31 @@
 
+ion-badge {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 100%;
+}
+ 
+.category-block {
+    margin-bottom: 8px;
+}
+ 
+.category-banner {
+    border-left: 8px solid var(--ion-color-secondary);
+    background: rgb(89, 144, 226);
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+    color:#f04141;
+}
+
+h5{
+    font-family: 'Anton', sans-serif;
+
+
+}
